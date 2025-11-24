@@ -1,6 +1,6 @@
 # ✈️ Travel Booking Website
 
-> Hệ thống đặt tour du lịch trực tuyến trọn gói (Fullstack Project).
+> Hệ thống đặt tour du lịch trực tuyến, giúp kết nối khách hàng với các chuyến đi thú vị một cách nhanh chóng và tiện lợi. Đồ án cơ sở ngành Công nghệ Thông tin - Đại học Phenikaa.
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
@@ -8,30 +8,28 @@
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ## 📖 Giới thiệu
-Đây là dự án cá nhân (Personal Project) mô phỏng một sàn thương mại điện tử du lịch hoàn chỉnh. Hệ thống được tôi xây dựng từ con số 0, bao gồm cả thiết kế giao diện (Frontend), xử lý nghiệp vụ (Backend) và thiết kế cơ sở dữ liệu.
+Dự án xây dựng một trang web thương mại điện tử chuyên về dịch vụ du lịch. Hệ thống cho phép người dùng tìm kiếm, xem chi tiết và đặt tour (Booking). Đồng thời cung cấp trang quản trị (Admin Dashboard) để quản lý tour, đơn hàng và khách hàng.
 
-Mục tiêu của dự án là áp dụng kiến thức **Spring Boot** và mô hình **MVC** để giải quyết bài toán đặt vé trực tuyến thực tế.
+## 🚀 Tính năng chính
 
-## 🚀 Chức năng chính tôi đã xây dựng
+### 👤 Khách hàng (User)
+* **Đăng ký/Đăng nhập:** Bảo mật thông tin người dùng.
+* **Tìm kiếm Tour:** Lọc theo điểm đến, giá tiền, ngày khởi hành.
+* **Đặt Tour (Booking):** Quy trình đặt vé và thanh toán trực tuyến.
+* **Lịch sử:** Xem lại các tour đã đặt.
 
-### 👤 Phân hệ Người dùng (Client)
-* **Authentication:** Đăng ký, Đăng nhập, Quên mật khẩu (Spring Security).
-* **Booking Flow:** Tìm kiếm tour -> Xem chi tiết -> Chọn lịch trình -> Đặt vé -> Thanh toán.
-* **Profile:** Quản lý thông tin cá nhân và lịch sử đặt tour.
-
-### 🛠 Phân hệ Quản trị (Admin Dashboard)
-* **CRUD Management:** Quản lý toàn bộ Tour, Danh mục, User và Bài viết.
-* **Order Processing:** Duyệt đơn đặt tour, xử lý hủy đơn và hoàn tiền.
-* **Statistics:** Thống kê doanh thu theo tháng/quý (Biểu đồ).
+### 🛠 Quản trị viên (Admin)
+* **Quản lý Tour:** Thêm, sửa, xóa thông tin tour du lịch.
+* **Quản lý Đơn hàng:** Duyệt đơn, hủy đơn, xem doanh thu.
+* **Quản lý Người dùng:** Phân quyền và quản lý tài khoản khách hàng.
 
 ## 🛠 Công nghệ sử dụng
-* **Core:** Java 17.
-* **Backend Framework:** Spring Boot 3.0 (Spring MVC, Spring Data JPA, Spring Security).
-* **Frontend:** Thymeleaf Template Engine, HTML5, CSS3, Bootstrap 5, JavaScript.
+* **Backend:** Java 17, Spring Boot (Spring MVC, Spring Data JPA, Spring Security).
+* **Frontend:** HTML5, CSS3, JavaScript, Bootstrap, Thymeleaf.
 * **Database:** MySQL.
 * **Tools:** IntelliJ IDEA, Maven, Git, Postman.
 
-## ⚙️ Cài đặt và Chạy
+## ⚙️ Cài đặt và Chạy dự án
 
 **Yêu cầu:** JDK 17+, MySQL, Maven.
 
@@ -43,7 +41,7 @@ Mục tiêu của dự án là áp dụng kiến thức **Spring Boot** và mô 
 
 2.  **Cấu hình Database:**
     * Tạo database tên `travel_booking` trong MySQL.
-    * Cập nhật `application.properties`:
+    * Mở file `src/main/resources/application.properties` và chỉnh sửa username/password của bạn:
     ```properties
     spring.datasource.url=jdbc:mysql://localhost:3306/travel_booking
     spring.datasource.username=root
@@ -54,10 +52,17 @@ Mục tiêu của dự án là áp dụng kiến thức **Spring Boot** và mô 
     ```bash
     mvn spring-boot:run
     ```
+    Hoặc chạy file `TravelBookingApplication.java` trong IntelliJ IDEA.
 
 4.  **Truy cập:**
     * Trang chủ: `http://localhost:8080`
-    * Admin: `http://localhost:8080/admin` (Tài khoản: admin/123456)
+    * Admin: `http://localhost:8080/admin`
+
+## 🤝 Thành viên thực hiện
+* **Dương Nhật Minh** (Leader): Fullstack, System Design.
+* **Nguyễn Thị Kiều Loan:** Frontend, Testing.
+* **Hà Nam Khánh:** Backend, Database Design.
+* **Dương Văn Thắng:** Backend, Logic System.
 
 ---
-*Developed by Hà Nam Khánh*
+*Created by Team Phenikaa Uni - 2025*
