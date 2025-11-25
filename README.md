@@ -59,10 +59,10 @@ Dự án xây dựng một trang web thương mại điện tử chuyên về d�
     * Admin: `http://localhost:8080/admin`
 
 ## 🤝 Thành viên thực hiện
-* **Dương Nhật Minh** (Leader): Fullstack, System Design.
+* **Dương Nhật Minh** (Leader): Backend, System Design.
 * **Nguyễn Thị Kiều Loan:** Frontend, Testing.
 * **Hà Nam Khánh:** Backend, Database Design.
-* **Dương Văn Thắng:** Backend, Logic System.
+* **Dương Văn Thắng:** Fontend, Logic System.
 
 ---
 *Created by Team Phenikaa Uni - 2025*
